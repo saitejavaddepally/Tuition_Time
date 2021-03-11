@@ -1,0 +1,322 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 1000000;
+    padding: 1rem 6.5rem;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#list-item li { 
+    list-style: none;
+    padding: 30px;
+}
+#list-item li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#list-item li a:hover{
+    color:red;
+    cursor:pointer;
+}
+.nav h2 {
+    
+    color: rgb(228, 217, 217);
+    font-size: 2.0rem;
+}
+
+#bar{
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.back-img {
+    background-image: url(../images/bg_image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.back-img .overlay{
+    background :black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+}
+
+.wel-par {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+.wel-par h1{
+    text-transform: uppercase;
+    color: white;
+    font-size : 5rem;
+}
+
+.wel-par .btn{
+    margin-top: 2rem;
+}
+
+
+.wel-par .btn a.get-start-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    padding: 0.9rem 1rem;
+    margin-top: 30px;
+}
+.wel-par .btn a.get-start-btn:hover{
+    background: green;
+    color: wheat;
+}
+
+.web-join{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+
+.web-join .join-info h1{
+    margin-top: 30px;
+    font-size : 2.5rem;
+    align-items: center;
+    text-align: center;
+    color: rgb(35, 87, 35);
+
+}
+
+
+
+.web-join .join-info p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size : 1.5rem;
+    align-items: center;
+    /* text-align: center; */
+    color: black;
+}
+.web-join .join-info a.join-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.9rem 1rem;
+    margin-top: 30px;
+}
+
+.web-join .join-info a.join-btn:hover{
+    background: green;
+    color: wheat;
+}
+
+.tuit-ins{
+    background-color: #f9f9f9;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tuit-ins .about {
+    width: 39%;
+}
+.tuit-ins .about h2{
+    color: black;
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+}
+.tuit-ins .about p{
+    color: black;
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+}
+
+.tuit-ins .people {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tuit-ins .people .ins-one{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+}
+
+.tuit-ins .people .ins-one .ins-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    border-top: 1px grey #ecf0f1;
+    background: wheat;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1083px){
+    .nav {
+        padding: 1rem 4.5rem;       
+    }
+    
+    #list-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #list-item li { 
+        padding: 20px;
+    }
+    #list-item li a{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:919px){
+    .nav {
+        padding: 1rem 2.5rem;     
+    }
+    
+    
+    #list-item{
+        display: none;
+    }
+    #list-item li { 
+        list-style: none;
+        padding-top: 5px;
+    }
+    #list-item li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    #list-item li a:hover{
+        color:red;
+        cursor:pointer;
+    }
+    .nav h2 {
+        font-size: 1.6rem;
+    }
+    
+    #bar{
+        color: white;
+        font-size: 1.5rem;
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
+    .tuit-ins{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tuit-ins .about {
+        width: 100%;
+    }
+    .tuit-ins .about h2{
+        text-align: center;
+    }
+    .tuit-ins .about p{
+        text-align: center;
+    }
+    .tuit-ins .people {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .tuit-ins .people .ins-one{
+        width: 100%;
+        height: 100%;
+        margin-right: 20px;
+        box-sizing: border-box;
+    }
+    
+    .tuit-ins .people .ins-one .ins-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:650px){
+
+    .tuit-ins{
+        flex-direction: column;
+    }
+    
+    .tuit-ins .about {
+        width: 100%;
+    }
+    .tuit-ins .about h2{
+        text-align: center;
+    }
+    .tuit-ins .about p{
+        text-align: center;
+    }
+    .tuit-ins .people {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .tuit-ins .people .ins-one{
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .tuit-ins .people .ins-one .ins-img{
+        
+        width: 100%;
+    }
+    
+    .tuit-ins .people .ins-one .ins-img img{
+        width: 100%;
+        object-fit: cover;
+        
+    }
+}
+
