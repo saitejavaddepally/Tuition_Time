@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # custom apps 
+    'accounts',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +84,7 @@ WSGI_APPLICATION = 'Tuition_Time.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'students',
+        'NAME': 'user_accounts',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'USER': 'root',
